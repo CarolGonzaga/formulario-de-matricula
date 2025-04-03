@@ -26,3 +26,13 @@ button {
         }
     }
 }
+
+@media (width <=500px) {
+    button {
+        text-align: center;
+
+        &.btn-secondary {
+            margin: 0;
+        }
+    }
+}

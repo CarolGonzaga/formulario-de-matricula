@@ -52,3 +52,14 @@ img {
 .flex-2 {
     flex: 2;
 }
+
+
+@media (width <= 500px) {
+    body {
+        overflow: auto;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+}

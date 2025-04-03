@@ -1,5 +1,5 @@
 .drop-zone {
-    border: 1px dashed var(--stroke-default);
+    border: 2px dashed var(--stroke-default);
     border-radius: .25rem;
 
     display: grid;

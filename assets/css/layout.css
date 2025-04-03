@@ -45,7 +45,7 @@ aside {
             }
 
 
-            & div > h2 {
+            & div>h2 {
                 font: 600 2.5rem/1.25 var(--font-family);
                 margin-bottom: .5rem;
 
@@ -55,9 +55,46 @@ aside {
             }
         }
 
-        & > img {
+        &>img {
             margin-top: 5rem;
         }
     }
 
+}
+
+@media (width <=500px) {
+    #app {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    main {
+        padding: 24px;
+    }
+
+    aside {
+        padding: 24px;
+
+        & .aside-container {
+            max-width: 100%;
+
+            & header {
+                gap: 12px;
+
+                & img {
+                    width: 203px;
+                    margin-inline: auto;
+                }
+            }
+
+            &>img {
+                margin-top: 0;
+            }
+        }
+    }
 }
